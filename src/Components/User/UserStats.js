@@ -1,4 +1,5 @@
 import React from 'react';
+import Error from '../Helper/Error';
 import { STATS_GET } from '../../api';
 import useFetch from '../../Hooks/useFetch';
 import Head from '../Helper/Head';
@@ -17,7 +18,7 @@ const UserStats = () => {
   }, [request]);
 
   if (loading) return <Loading />;
-  if (error) return <Loading error={error} />;
+  if (error) return <Error error={error} />;
   if (data)
     return (
       <React.Suspense fallback={<div></div>}>

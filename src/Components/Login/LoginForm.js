@@ -12,7 +12,6 @@ import Head from '../Helper/Head';
 const LoginForm = () => {
   const username = useForm();
   const password = useForm();
-  
   const { userLogin, error, loading } = React.useContext(UserContext);
 
   async function handleSubmit(event) {

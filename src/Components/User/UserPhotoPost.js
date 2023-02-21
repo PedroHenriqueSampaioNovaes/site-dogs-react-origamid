@@ -11,8 +11,8 @@ import Head from '../Helper/Head';
 
 const UserPhotoPost = () => {
   const nome = useForm();
-  const peso = useForm('number');
-  const idade = useForm('number');
+  const peso = useForm();
+  const idade = useForm();
   const [img, setImg] = React.useState({});
   const { data, error, loading, request } = useFetch();
   const navigate = useNavigate();
